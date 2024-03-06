@@ -145,7 +145,7 @@ async function setImage() {
   let title = "";
 
   if ("message" in image_data || image_data.primaryImage == "") {
-    image.src = "error.png";
+    image.src = "unknown.png";
     artist = "undefined";
     title = "undefined";
   } else {
