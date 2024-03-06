@@ -104,7 +104,7 @@ function removeFromScene() {
 
 async function getObjectData() {
   const response = await fetch(
-    "https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=19"
+    "https://collectionapi.metmuseum.org/public/collection/v1/objects"
   );
   const json = JSON.stringify(await response.json());
   objectIDs = JSON.parse(json).objectIDs;
