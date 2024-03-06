@@ -124,7 +124,6 @@ async function getImageFromURL() {
     }
     const jsonstr = JSON.stringify(await response.json());
     const json = JSON.parse(jsonstr);
-    console.log(json);
     return json;
   } catch (error) {
     console.error(error);
